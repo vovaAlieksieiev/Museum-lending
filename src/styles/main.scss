@@ -1,7 +1,23 @@
-@import "utils";
-@import "fonts";
-@import "typography";
+@import "./utils/vars";
+@import "./utils/mixins";
+@import "./utils/reset";
 
-body {
-  background: $c-gray;
-}
+@import "./blocks/art-museum";
+@import "./blocks/container";
+@import "./blocks/current";
+@import "./blocks/event";
+@import "./blocks/footer";
+@import "./blocks/form";
+@import "./blocks/gallery";
+@import "./blocks/grid";
+@import "./blocks/header";
+@import "./blocks/lection";
+@import "./blocks/list-navigation";
+@import "./blocks/menu";
+@import "./blocks/page";
+@import "./blocks/slider";
+@import "./blocks/social-icon";
+@import "./blocks/subscribe";
+@import "./blocks/title";
+@import "./blocks/top-action";
+@import "./blocks/work";

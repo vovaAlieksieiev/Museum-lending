@@ -1,0 +1,99 @@
+.footer {
+  padding: 50px 0 0;
+
+  &__top-action {
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include onTablet {
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    @include onTablet {
+      margin-bottom: 62px;
+    }
+  }
+
+  &__icons {
+    display: flex;
+  }
+
+  &__icon-left {
+    margin-right: 20px;
+  }
+
+  &__contact {
+    font-family: $font-text;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+
+    &-title {
+      font-family: $font-text;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 140.62%;
+      margin: 0 0 20px;
+    }
+
+    &-link {
+      display: block;
+      text-decoration: none;
+      color: $color-black;
+      font-family: $font-text;
+      border-bottom: 1px solid transparent;
+      transition: all 0.3s;
+
+      &:hover {
+        border-color: $color-black;
+      }
+
+    }
+  }
+
+  &__arrow {
+    padding: 150px 0 70px;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+
+    @include onTablet {
+      display: none;
+    }
+
+    &-item {
+      position: absolute;
+      right: 0;
+      border: none;
+      margin: 0;
+      padding: 0;
+      overflow: visible;
+      height: 50px;
+      width: 50px;
+      background-image: url("../images/icons/arrow-up.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__content-wrap-description {
+    @include onTablet {
+      margin-bottom: 64px;
+    }
+  }
+
+  &__content-wrap-list {
+
+    @include onDesktop {
+      border-left: 1px rgba(26, 90, 76, 0.5) solid;
+      padding-bottom: 200px;
+      padding-left: 100px;
+    }
+  }
+}
